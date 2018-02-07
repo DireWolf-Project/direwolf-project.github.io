@@ -1091,7 +1091,7 @@
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/wolfpack.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1133,7 +1133,7 @@
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		position: relative;
-		min-height: 100vh;
+		min-height: 85vh;
 		width: 100%;
 		padding: 4rem 2rem;
 		z-index: 3;
@@ -1204,16 +1204,7 @@
 			margin-top: 3.5rem;
 		}
 
-			#header > *:before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: calc(-3.5rem - 1px);
-				left: calc(50% - 1px);
-				width: 1px;
-				height: calc(3.5rem + 1px);
-				background: #ffffff;
-			}
+			
 
 		#header > :first-child {
 			margin-top: 0;
@@ -1224,7 +1215,7 @@
 			}
 
 		#header .logo {
-			width: 5.5rem;
+			width: 5.3rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
@@ -1236,11 +1227,11 @@
 			}
 
 		#header .content {
-			border-style: solid;
-			border-color: #ffffff;
-			border-top-width: 1px;
-			border-bottom-width: 1px;
-			max-width: 100%;
+			max-width: 75%;
+    			background-color: rgba(27, 31, 34, 0.3);
+			border-radius: 25px;
+			padding-left: 5%;
+			padding-right: 5%;
 		}
 
 			#header .content .inner {
