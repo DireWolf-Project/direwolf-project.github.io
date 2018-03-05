@@ -1204,8 +1204,6 @@
 			margin-top: 3.5rem;
 		}
 
-			
-
 		#header > :first-child {
 			margin-top: 0;
 		}
@@ -1228,7 +1226,7 @@
 
 		#header .content {
 			max-width: 75%;
-    			background-color: rgba(27, 31, 34, 0.3);
+    		background-color: rgba(27, 31, 34, 0.3);
 			border-radius: 25px;
 			padding-left: 5%;
 			padding-right: 5%;
@@ -1583,3 +1581,104 @@
 		body.is-loading #footer {
 			opacity: 0;
 		}
+
+/* aimss */
+#aimss-icons {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#aimss-icons i {
+	font-size: 5rem;
+	font-size: 6rem;
+}
+
+#aimss-icons a {
+	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+	border-bottom: none;
+	text-decoration: none;
+	color: inherit;
+	padding: 20px;
+	flex: 1 0 20%;
+}
+
+#aimss-icons a:hover {
+	opacity: 0.75;
+	color: #103d8b;
+}
+
+#aimss span {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* Experience */
+#apply h2 {
+	margin-bottom: 10px;
+}
+
+#apply a:hover {
+	opacity: 0.75;
+	color: #103d8b;
+}
+
+#apply li > span {
+	position: relative; left: -10px;
+}
+
+#experience > ul {
+  padding-left: 0;
+}
+
+#experience > ul > li {
+	list-style: none;
+	padding-left: 0;
+	list-style-position: inside;
+}
+
+#experience > ul > li > ul {
+	padding-left: 2em;
+}
+
+
+/* Projects */
+#projects a {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	text-decoration: none;
+	border-bottom: none;
+	margin: 3em auto;
+	text-align: center;
+}
+
+#projects a:hover {
+	transform: scale(1.05);
+	opacity: 0.75;
+}
+
+#projects img {
+	width: 100%;
+	border: 1px solid #fff;
+	/*box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);*/
+	display: block;
+	margin: 1em auto;
+}
+
+#projects h3 {
+	text-align: center;
+}
+
+#projects h5 {
+	text-align: left;
+}
+
+#projects span {
+	text-decoration: underline;
+}
