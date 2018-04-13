@@ -58,8 +58,7 @@
 				}).triggerHandler('resize.flexbox-fix');
 
 			}
-
-		// Nav.
+	/*	// Nav.
 			var $nav = $header.children('nav'),
 				$nav_li = $nav.find('li');
 
@@ -70,6 +69,7 @@
 					$nav_li.eq( ($nav_li.length / 2) ).addClass('is-middle');
 
 				}
+	*/
 
 		// Main.
 			var	delay = 325,
