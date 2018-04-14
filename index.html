@@ -29,6 +29,7 @@
 </head>
 
 <body>
+    <div id="scene">
     <!-- Wrapper -->
     <div id="wrapper">
         <!-- Header -->
@@ -137,15 +138,19 @@
             <p class="copyright"><a href="https://html5up.net/license">Creative Commons License</a></p>
         </footer>
     </div>
-
     <!-- BG -->
-    <div id="bg"></div>
-
+    <div data-depth="0.2" id="bg"></div>
+    </div>
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
 </body>
 
 </html>
