@@ -112,10 +112,6 @@ section {
     display: block;
 }
 
-article, footer, nav {
-    pointer-events: all;
-}
-
 body {
     line-height: 1;
     overflow-x: hidden;
@@ -1173,6 +1169,12 @@ button {
 
 /* BG */
 
+#scene {
+    position: fixed;
+	z-index: -9;
+	top:0;
+}
+
 #bg {
     -moz-transform: scale(1.0);
     -webkit-transform: scale(1.0);
@@ -1186,7 +1188,7 @@ button {
     bottom: 0;
     min-width: 100vw;
     min-height: 100vh;
-    z-index: 1;
+    z-index: -999;
 }
 
 #bg:before,
@@ -1217,7 +1219,7 @@ button {
     background-size: auto, 256px 256px;
     background-position: center, center;
     background-repeat: no-repeat, repeat;
-    z-index: 2;
+    z-index: -99;
 }
 
 #bg:after {
@@ -1229,7 +1231,7 @@ button {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: -999;
 }
 
 body.is-article-visible #bg:after {

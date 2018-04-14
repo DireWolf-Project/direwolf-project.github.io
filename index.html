@@ -29,7 +29,6 @@
 </head>
 
 <body>
-    <div id="scene">
     <!-- Wrapper -->
     <div id="wrapper">
         <!-- Header -->
@@ -59,7 +58,7 @@
             <!-- about -->
             <article id="about">
                 <h2 class="major">ABOUT AIMROM</h2>
-                <span class="image main"><img src="images/aboutaim.svg" alt="" /></span>
+                <span class="image main"><img src="images/aboutaim.svg" alt="" style="max-height: 80vh;" /></span>
                 <!--<p style="font-size: 30px;font-weight: bold;">About AIMROM</p> -->
                 <p>AIMROM is based on AOSP. Our aim is to present to you a combination of unmatched stability, performance,battery life, minimal customizations and sets of usefull features that are picked by our team and testers. We ensure that the sweet taste of latest Android essence stays in your device.. It’s fully responsive, Fast, Smooth ,and Stable .</p>
             </article>
@@ -139,8 +138,10 @@
         </footer>
     </div>
     <!-- BG -->
-    <div data-depth="0.2" id="bg"></div>
+    <div id="scene">
+		<div data-depth="1" id="bg"></div>
     </div>
+
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
