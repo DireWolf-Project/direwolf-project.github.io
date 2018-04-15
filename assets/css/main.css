@@ -1694,7 +1694,13 @@ download a:hover {
     transition: 0.5s background-color;
 }
 
-devicename, manufacturer, latestupdate, download, download a {
+devicename,
+manufacturer,
+latestupdate,
+download,
+download a,
+version,
+#main article#changelog span.log {
     display: block;
 }
 
@@ -1712,6 +1718,59 @@ manufacturer::before {
 
 latestupdate::before {
     content: "Updated: ";
+}
+
+version, date {
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+#changelog span.log ul li {
+    color: #000;
+    font-weight: 600;
+    line-height: 0.6;
+    font-size: 0.9rem;
+    margin: 0 0 1rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.swiper-container {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide span.image{
+    margin: 1rem 0;
+}
+
+.slide-title {
+    text-align: center;
+}
+
+#main article#changelog span.log {
+    background-color: lightgray;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+version, date {
+    font-size 1.5rem;
+}
+
+version::before {
+    content: "Version: ";
+}
+
+date {
+    float: right;
+}
+
+date::before {
+    content: "Date: ";
 }
 
 @media screen and (max-width: 736px) {

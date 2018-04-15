@@ -24,6 +24,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
     <!-- NIL Script -->
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
@@ -64,24 +65,35 @@
             </article>
             <!-- Dick Picks -->
             <article id="pics">
-                <h2 class="major">Clean and Fresh UI</h2>
-                <span class="image main">
-                        <img src="images/main.png">
-					</span>
-            </article>
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <span class="image main">
+                                <img src="images/main.png" />
+                            </span>
+                            <h2 class="slide-title">Clean and Fresh UI</h2>
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="image main">
+                               <img src="images/screen1.jpg">
+                            </span>
+                            <h2 class="slide-title">Substratum Support</h2>
+                            </div>
+                        <div class="swiper-slide">
+                            <span class="image main">
+                               <img src="images/screen2.jpg">
+                            </span>
+                            <h2 class="slide-title">Pixel Launcher</h2>
+                        </div>
+                    </div>
 
-            <article id="pics">
-                <h2 class="major">Substratum Support</h2>
-                <span class="image main">
-					   <img src="images/screen1.jpg">
-				    </span>
-            </article>
-
-            <article id="pics">
-                <h2 class="major">Pixel Launcher</h2>
-                <span class="image main">
-					   <img src="images/screen2.jpg">
-				    </span>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
             </article>
             <!-- Downloads -->
             <article id="download">
@@ -90,60 +102,63 @@
                     <devicename>Marlin</devicename>
                     <manufacturer>Google</manufacturer>
                     <latestupdate>13 March 2018</latestupdate>
-                    <download><a class="download">DOWNLOAD</a></download>
+                    <download><a href="#">DOWNLOAD</a></download>
                 </span>
                 <span class="device">
                     <devicename>Osprey</devicename>
                     <manufacturer>Motorola</manufacturer>
                     <latestupdate>13 March 2018</latestupdate>
-                    <download><a class="download">DOWNLOAD</a></download>
+                    <download><a href="#">DOWNLOAD</a></download>
                 </span>
                 <span class="device">
                     <devicename>Sanders</devicename>
                     <manufacturer>Motorola</manufacturer>
                     <latestupdate>13 March 2018</latestupdate>
-                    <download><a class="download">DOWNLOAD</a></download>
+                    <download><a href="#">DOWNLOAD</a></download>
                 </span>
                 <span class="device">
                     <devicename>ZenFone3</devicename>
                     <manufacturer>Asus</manufacturer>
                     <latestupdate>13 March 2018</latestupdate>
-                    <download><a class="download">DOWNLOAD</a></download>
+                    <download><a href="#">DOWNLOAD</a></download>
                 </span>
             </article>
 
             <!-- Changelog -->
             <article id="changelog">
                 <h2 class="major">Changelog</h2>
-                <span class="image main"></span>
-                <h2>Ver : <i>3.1</i></h2>
-                <h2>Day :</h2>
-                <h4> # AIMROM OREO 8.1 Changelog </h4>
-                <h4> -> Merged feb seurity patch </h4>
-                <h4> -> Fixed Dark themeing issues </h4>
-                <h4> -> Fixed recents missbehaviour </h4>
-                <h4> -> Fixed LED lights switch </h4>
-                <h4> -> Changed default thumb type </h4>
-                <h4> -> Added AIMWALLS </h4>
-                <h4> -> Added New Ringtones/sounds </h4>
-                <h4> -> Added Ticker padding fix </h4>
-                <h4> -> Added More Accent colors </h4>
-                <h4> -> Added Framework Boost </h4>
-                <h4> -> Added Quick unlock </h4>
-                <h4> -> Fixed APPOPS crash </h4>
-                <h4> -> Fixed QStiles NPE during boot </h4>
-                <h4> -> Added Stubs for setcursor visibility </h4>
-                <h4> -> Added Vibrate on plug </h4>
-                <h4> -> Added Alert on charging level </h4>
-                <h4> -> Added charging event sounds </h4>
-                <h4> -> Added Battery image enable/disable </h4>
-                <h4> -> Added reset battery stats </h4>
-                <h4> -> Added Password orientation feature </h4>
-                <h4> -> Added full substratum support (fixed bugs) </h4>
-                <h4> -> Disable QS panel transparency </h4>
-                <h4> -> Adaptive icons for all Systemapps </h4>
-                <h4> -> More and More :) ... </h4>
-                <h4> #LetsAimify </h4>
+                <date>13 March 2018</date>
+                <version>3.1</version>
+                <span class="log">
+                    <ul>
+                        <li> # AIMROM OREO 8.1 Changelog </li>
+                        <li>Merged feb seurity patch </li>
+                        <li>Fixed Dark themeing issues </li>
+                        <li>Fixed recents missbehaviour </li>
+                        <li>Fixed LED lights switch </li>
+                        <li>Changed default thumb type </li>
+                        <li>Added AIMWALLS </li>
+                        <li>Added New Ringtones/sounds </li>
+                        <li>Added Ticker padding fix </li>
+                        <li>Added More Accent colors </li>
+                        <li>Added Framework Boost </li>
+                        <li>Added Quick unlock </li>
+                        <li>Fixed APPOPS crash </li>
+                        <li>Fixed QStiles NPE during boot </li>
+                        <li>Added Stubs for setcursor visibility </li>
+                        <li>Added Vibrate on plug </li>
+                        <li>Added Alert on charging level </li>
+                        <li>Added charging event sounds </li>
+                        <li>Added Battery image enable/disable </li>
+                        <li>Added reset battery stats </li>
+                        <li>Added Password orientation feature </li>
+                        <li>Added full substratum support (fixed bugs) </li>
+                        <li>Disable QS panel transparency </li>
+                        <li>Adaptive icons for all Systemapps </li>
+                        <li>More and More :) ... </li>
+                        <li> #LetsAimify </li>
+                    </ul>
+                </span>
             </article>
         </div>
         <!-- Main -->
@@ -169,10 +184,28 @@
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
         var scene = document.getElementById('scene');
         var parallaxInstance = new Parallax(scene);
+        
+        var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // enable keyboard navigation
+            keyboard: {
+                enabled: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            }
+        })
     </script>
 </body>
 
