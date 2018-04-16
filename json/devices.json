@@ -19,5 +19,12 @@
         "maintainer": "UNKNOWN",
         "latestupdate": "15 April 2018",
         "download": "https://sourceforge.net/projects/aimroms/files/kenzo/"
+    },
+    {
+        "devicename": "Sanders",
+        "manufacturer": "Motorola",
+        "maintainer": "Chirayu Agrawal (chirayu19091997)",
+        "latestupdate": "12 April 2018",
+        "download": "https://sourceforge.net/projects/aimroms/files/sanders/"
     }
 ]
