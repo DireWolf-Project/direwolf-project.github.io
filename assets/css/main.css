@@ -269,9 +269,7 @@ h3,
 h4,
 h5,
 h6,
-devicename,
-manufacturer,
-latestupdate {
+devicename {
     color: #ffffff;
     font-weight: 600;
     line-height: 1.5;
@@ -1660,7 +1658,7 @@ body.is-loading #header .content .inner {
     background-color: rgba(255, 255, 255, 0.175);
 }
 
-#main article .device {
+#main article #list-devices device {
     padding: 1rem 1.5rem;
     border-radius: 5px;
     display: block;
@@ -1700,20 +1698,35 @@ latestupdate,
 download,
 download a,
 version,
+maintainer,
 #main article#changelog span.log {
     display: block;
+}
+
+manufacturer,
+maintainer,
+latestupdate {
+    color: #FFF;
+    font-weight: 600;
+    line-height: 0.6;
+    margin: 0 0 1rem 0;
+    letter-spacing: 0.1rem;
 }
 
 devicename {
     font-size: 1.5rem;
 }
 
-manufacturer, latestupdate {
-    font-size: 0.7rem;
+manufacturer, latestupdate, maintainer {
+    font-size: 0.8rem;
 }
 
 manufacturer::before {
     content: "Manufacturer: ";
+}
+
+maintainer::before {
+    content: "Maintainer: ";
 }
 
 latestupdate::before {

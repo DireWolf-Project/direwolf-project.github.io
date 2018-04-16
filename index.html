@@ -98,30 +98,7 @@
             <!-- Downloads -->
             <article id="download">
                 <h2 class="major">DOWNLOADS</h2>
-                <span class="device">
-                    <devicename>Marlin</devicename>
-                    <manufacturer>Google</manufacturer>
-                    <latestupdate>13 March 2018</latestupdate>
-                    <download><a href="#">DOWNLOAD</a></download>
-                </span>
-                <span class="device">
-                    <devicename>Osprey</devicename>
-                    <manufacturer>Motorola</manufacturer>
-                    <latestupdate>13 March 2018</latestupdate>
-                    <download><a href="#">DOWNLOAD</a></download>
-                </span>
-                <span class="device">
-                    <devicename>Sanders</devicename>
-                    <manufacturer>Motorola</manufacturer>
-                    <latestupdate>13 March 2018</latestupdate>
-                    <download><a href="#">DOWNLOAD</a></download>
-                </span>
-                <span class="device">
-                    <devicename>ZenFone3</devicename>
-                    <manufacturer>Asus</manufacturer>
-                    <latestupdate>13 March 2018</latestupdate>
-                    <download><a href="#">DOWNLOAD</a></download>
-                </span>
+                <div id="list-devices"></div>
             </article>
 
             <!-- Changelog -->
@@ -170,8 +147,8 @@
                 <li><a href="https://twitter.com/" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
                 <li><a href="mailto:mailus.aimrom@gmail.com?Subject=Hi%20there!" class="icon fa-envelope" target="_blank"><span class="label">Email</span></a></li>
             </ul>
-            <p class="copyright">&copy; Created By <a href="https://facebook.com/Anand.nv24">Anand Ramachandran</a>.</p>
-            <p class="copyright"><a href="https://html5up.net/license">Creative Commons License</a></p>
+            <p class="copyright">&copy; 2017 - 2018 <a href="https://github.com/aimrom">AIMROM</a></p>
+            <p class="copyright">Template by html5up <a href="https://html5up.net/license">Creative Commons License</a></p>
         </footer>
     </div>
     <!-- BG -->
@@ -187,6 +164,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
+        $.getJSON( "json/devices.json", function( data ) {
+          var items = [];
+          $.each(data ,function(key, val) {
+            items.push('<devicename>' + val.devicename +'</devicename><manufacturer>' + val.manufacturer +'</manufacturer><maintainer>' + val.maintainer +'</maintainer><latestupdate>' + val.latestupdate +'</latestupdate><download><a target="_blank" href="' + val.download +'">DOWNLOAD</a></download>');
+              $( '<device/>', {
+                "class": "my-new-list",
+                html: items.pop( "" )
+              }).appendTo( "#list-devices" );
+            });
+        });
+
         var scene = document.getElementById('scene');
         var parallaxInstance = new Parallax(scene);
         

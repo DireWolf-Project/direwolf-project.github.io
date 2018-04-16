@@ -1,0 +1,16 @@
+[
+    {
+        "devicename": "Athene",
+        "manufacturer": "Motorola",
+        "maintainer": "UNKNOWN",
+        "latestupdate": "15 April 2018",
+        "download": "https://sourceforge.net/projects/aimroms/files/athene/"
+    },
+    {
+        "devicename": "Kenzo",
+        "manufacturer": "Xiaomi",
+        "maintainer": "UNKNOWN",
+        "latestupdate": "15 April 2018",
+        "download": "https://sourceforge.net/projects/aimroms/files/kenzo/"
+    }
+]
