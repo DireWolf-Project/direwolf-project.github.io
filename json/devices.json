@@ -7,6 +7,13 @@
         "download": "https://sourceforge.net/projects/aimroms/files/athene/"
     },
     {
+        "devicename": "ido",
+        "manufacturer": "Xiaomi",
+        "maintainer": "Albert I (krasCGQ)",
+        "latestupdate": "01 March 2018",
+        "download": "https://sourceforge.net/projects/aimroms/files/ido/"
+    },
+    {
         "devicename": "Kenzo",
         "manufacturer": "Xiaomi",
         "maintainer": "UNKNOWN",
