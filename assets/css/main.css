@@ -1678,13 +1678,14 @@ download a {
     color: indigo;
     font-weight: 600;
     line-height: 1.5;
-    padding: 5px;
-    width: 120px;
+    padding: 5px 10px;
+    min-width: 4rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     transition: 0.5s background-color;
     float: right;
+    margin-left: 0.5rem;
 }
 
 download a:hover {
@@ -1694,7 +1695,7 @@ download a:hover {
 
 devicename,
 manufacturer,
-latestupdate,
+aimversion,
 download,
 download a,
 version,
@@ -1705,11 +1706,11 @@ maintainer,
 
 manufacturer,
 maintainer,
-latestupdate {
+aimversion {
     color: #FFF;
     font-weight: 600;
-    line-height: 0.6;
-    margin: 0 0 1rem 0;
+    line-height: 1.2;
+    margin-bottom: 0.4rem;
     letter-spacing: 0.1rem;
 }
 
@@ -1717,7 +1718,11 @@ devicename {
     font-size: 1.5rem;
 }
 
-manufacturer, latestupdate, maintainer {
+download {
+    margin-top: 0.6rem;
+}
+
+manufacturer, aimversion, maintainer {
     font-size: 0.8rem;
 }
 
@@ -1729,8 +1734,8 @@ maintainer::before {
     content: "Maintainer: ";
 }
 
-latestupdate::before {
-    content: "Updated: ";
+aimversion::before {
+    content: "Version: ";
 }
 
 version, date {

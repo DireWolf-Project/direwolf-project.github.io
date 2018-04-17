@@ -166,8 +166,9 @@
     <script>
         $.getJSON( "json/devices.json", function( data ) {
           var items = [];
+
           $.each(data ,function(key, val) {
-            items.push('<devicename>' + val.devicename +'</devicename><manufacturer>' + val.manufacturer +'</manufacturer><maintainer>' + val.maintainer +'</maintainer><latestupdate>' + val.latestupdate +'</latestupdate><download><a target="_blank" href="' + val.download +'">DOWNLOAD</a></download>');
+            items.push('<devicename>' + val.devicename +'</devicename><manufacturer>' + val.manufacturer +'</manufacturer><aimversion>' + val.aimversion +'</aimversion><maintainer>' + val.maintainer +'</maintainer><download><a target="_blank" href="' + val.download +'">DOWNLOAD</a><a target="_blank" href=' + val.forumlink +'>XDA</a></download>');
               $( '<device/>', {
                 "class": "my-new-list",
                 html: items.pop( "" )
