@@ -7,7 +7,7 @@
 <html>
 
 <head>
-    <title>#Let's Aimify</title>
+    <title>Wolf's Cave</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <!-- Chrome -->
@@ -18,9 +18,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Favicons -->
-    <link rel="shortcut icon" href="images/aim-dark.png">
-    <link rel="apple-touch-icon" href="images/aim-dark.png">
-    <link rel="shortcut icon" href="images/aim-dark.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/dw-dark.png">
+    <link rel="apple-touch-icon" href="images/dw-dark.png">
+    <link rel="shortcut icon" href="images/dw-dark.png" type="image/x-icon" />
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -35,22 +35,21 @@
         <!-- Header -->
         <header id="header">
             <div class="logo">
-                <img class="logo" src="images/aim.png">
+                <img class="logo" src="images/dw.png">
             </div>
             <div class="content">
                 <div class="inner">
-                    <h1>AIMROM</h1>
+                    <h1>DireWolf Kernel</h1>
                     <p>
-                        <!--[-->Responsive, Fast, Smooth and Stable Rom by <a href="https://github.com/aimrom">TEAM AIM</a>
+                        <!--[-->Feel your android device's real power with DireWolf Kernel by <a href="https://github.com/direwolfkernel">TEAM WOLF</a>
                         <!--]--><br />
                 </div>
             </div>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#pics">Gallery</a></li>
                     <li><a href="#download">Download</a></li>
-                    <li><a href="#changelog">Changelog</a></li>
+                    <li><a href="#changelog">Features</a></li>
                 </ul>
             </nav>
         </header>
@@ -58,10 +57,10 @@
         <div id="main">
             <!-- about -->
             <article id="about">
-                <h2 class="major">ABOUT AIMROM</h2>
-                <span class="image main"><img src="images/aboutaim.svg" alt="" style="max-height: 80vh;" /></span>
+                <h2 class="major">ABOUT DIREWOLF</h2>
+                <span class="image main"><img src="images/aboutdw.png" alt="" style="max-height: 80vh;" /></span>
                 <!--<p style="font-size: 30px;font-weight: bold;">About AIMROM</p> -->
-                <p>AIMROM is based on AOSP. Our aim is to present to you a combination of unmatched stability, performance,battery life, minimal customizations and sets of usefull features that are picked by our team and testers. We ensure that the sweet taste of latest Android essence stays in your device.. It’s fully responsive, Fast, Smooth ,and Stable .</p>
+                <p>DireWolf Kernel was started by initially by LordShenron for Xioami Redmi 5A(Riva) and it focused mostly on making the sound capabilities of that device better. Later it evolved into a full Customized Kernel with a motive to increase the overall performance of the device. Team Wolf was formed when Enzaik and Kamil joined and started working to make Direwolf better. Now we are increasing our support for many device slowly.</p>
             </article>
             <!-- Dick Picks -->
             <article id="pics">
@@ -70,24 +69,6 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide">
-                            <span class="image main">
-                                <img src="images/main.png" />
-                            </span>
-                            <h2 class="slide-title">Clean and Fresh UI</h2>
-                        </div>
-                        <div class="swiper-slide">
-                            <span class="image main">
-                               <img src="images/screen1.jpg">
-                            </span>
-                            <h2 class="slide-title">Substratum Support</h2>
-                            </div>
-                        <div class="swiper-slide">
-                            <span class="image main">
-                               <img src="images/screen2.jpg">
-                            </span>
-                            <h2 class="slide-title">Pixel Launcher</h2>
-                        </div>
                     </div>
 
                     <!-- If we need navigation buttons -->
@@ -99,41 +80,17 @@
             <article id="download">
                 <h2 class="major">DOWNLOADS</h2>
                 <div id="list-devices"></div>
+                <device class="my-new-list"><devicename>Riva/Rolex</devicename><manufacturer>Xiaomi</manufacturer><aimversion>6</aimversion><maintainer>Enzaik</maintainer><download><a target="_blank" href="">DOWNLOAD</a><a target="_blank" href="">XDA</a></download></device>
             </article>
 
             <!-- Changelog -->
             <article id="changelog">
-                <h2 class="major">Changelog</h2>
-                <date>13 March 2018</date>
+                <h2 class="major">Features</h2>
+                <date>Next rilis</date>
                 <version>3.1</version>
                 <span class="log">
                     <ul>
-                        <li> # AIMROM OREO 8.1 Changelog </li>
-                        <li>Merged feb seurity patch </li>
-                        <li>Fixed Dark themeing issues </li>
-                        <li>Fixed recents missbehaviour </li>
-                        <li>Fixed LED lights switch </li>
-                        <li>Changed default thumb type </li>
-                        <li>Added AIMWALLS </li>
-                        <li>Added New Ringtones/sounds </li>
-                        <li>Added Ticker padding fix </li>
-                        <li>Added More Accent colors </li>
-                        <li>Added Framework Boost </li>
-                        <li>Added Quick unlock </li>
-                        <li>Fixed APPOPS crash </li>
-                        <li>Fixed QStiles NPE during boot </li>
-                        <li>Added Stubs for setcursor visibility </li>
-                        <li>Added Vibrate on plug </li>
-                        <li>Added Alert on charging level </li>
-                        <li>Added charging event sounds </li>
-                        <li>Added Battery image enable/disable </li>
-                        <li>Added reset battery stats </li>
-                        <li>Added Password orientation feature </li>
-                        <li>Added full substratum support (fixed bugs) </li>
-                        <li>Disable QS panel transparency </li>
-                        <li>Adaptive icons for all Systemapps </li>
-                        <li>More and More :) ... </li>
-                        <li> #LetsAimify </li>
+                        <li> DireWolf Features </li>
                     </ul>
                 </span>
             </article>
@@ -142,12 +99,11 @@
         <!-- Footer -->
         <footer id="footer">
             <ul class="icons">
-                <li><a href="https://www.linkedin.com/" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://github.com/aimrom" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-                <li><a href="https://twitter.com/" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-                <li><a href="mailto:mailus.aimrom@gmail.com?Subject=Hi%20there!" class="icon fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+                <li><a href="https://t.me/dckernel" class="icon fa-group" target="_blank"><span class="label">Telegram</span></a></li>
+                <li><a href="https://github.com/direwolfkernel" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+                <li><a href="mailto:priyanshu1911999@gmail.com?Subject=Hi%20there!" class="icon fa-envelope" target="_blank"><span class="label">Email</span></a></li>
             </ul>
-            <p class="copyright">&copy; 2017 - 2018 <a href="https://github.com/aimrom">AIMROM</a></p>
+            <p class="copyright">&copy; 2017 - 2018 <a href="https://github.com/aimrom">TEAM WOLF</a></p>
             <p class="copyright">Template by html5up <a href="https://html5up.net/license">Creative Commons License</a></p>
         </footer>
     </div>
@@ -168,7 +124,7 @@
           var items = [];
 
           $.each(data ,function(key, val) {
-            items.push('<devicename>' + val.devicename +'</devicename><manufacturer>' + val.manufacturer +'</manufacturer><aimversion>' + val.aimversion +'</aimversion><maintainer>' + val.maintainer +'</maintainer><download><a target="_blank" href="' + val.download +'">DOWNLOAD</a><a target="_blank" href=' + val.forumlink +'>XDA</a></download>');
+            items.push('<devicename>' + val.devicename +'</devicename><manufacturer>' + val.manufacturer +'</manufacturer><dwversion>' + val.dwversion +'</dwversion><maintainer>' + val.maintainer +'</maintainer><download><a target="_blank" href="' + val.download +'">DOWNLOAD</a><a target="_blank" href=' + val.forumlink +'>XDA</a></download>');
               $( '<device/>', {
                 "class": "my-new-list",
                 html: items.pop( "" )
