@@ -123,7 +123,7 @@
         $.getJSON( "json/devices.json", function( data ) {
           var items = [];
            $.each(data ,function(key, val) {
-            
+            items.push('<devicename>' + val.devicename +'</devicename><manufacturer>' + val.manufacturer +'</manufacturer><dwversion>' + val.dwversion +'</dwversion><maintainer>' + val.maintainer +'</maintainer><download><a target="_blank" href="' + val.download +'">DOWNLOAD</a><a target="_blank" href=' + val.forumlink +'>XDA</a></download>');
               $( '<device/>', {
                 "class": "my-new-list",
                 html: items.pop( "" )

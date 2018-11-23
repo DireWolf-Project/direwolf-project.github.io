@@ -1,34 +1,11 @@
 [
     {
-        "devicename": "Athene",
-        "manufacturer": "Motorola",
-        "aimversion": "3.2",
-        "maintainer": "Vinesh Iyappan (theHari08)",
-        "forumlink": "https://forum.xda-developers.com/showthread.php?t=3743641",
-        "download": "https://sourceforge.net/projects/aimroms/files/athene/"
-    },
-    {
-        "devicename": "ido",
+        "devicename": "Rolex/Riva",
         "manufacturer": "Xiaomi",
-        "aimversion": "3.1",
-        "maintainer": "Albert I (krasCGQ)",
-        "forumlink": "https://forum.xda-developers.com/showthread.php?t=3647040",
-        "download": "https://sourceforge.net/projects/aimroms/files/ido/"
+        "aimversion": "6",
+        "maintainer": "Enzaik",
+        "forumlink": "",
+        "download": ""
     },
-    {
-        "devicename": "Kenzo",
-        "manufacturer": "Xiaomi",
-        "aimversion": "3.2",
-        "maintainer": "Absar Rahman",
-        "forumlink": "https://forum.xda-developers.com/showthread.php?t=3779641",
-        "download": "https://sourceforge.net/projects/aimroms/files/kenzo/"
-    },
-    {
-        "devicename": "Sanders",
-        "manufacturer": "Motorola",
-        "aimversion": "3.2",
-        "maintainer": "Chirayu Agrawal (chirayu19091997)",
-        "forumlink": "https://forum.xda-developers.com/showthread.php?t=3776841",
-        "download": "https://sourceforge.net/projects/aimroms/files/sanders/"
-    }
+    
 ]
