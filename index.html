@@ -112,46 +112,7 @@
 		<div data-depth="0.5" id="bg"></div>
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-        $.getJSON( "json/devices.json", function( data ) {
-          var items = [];
-
-          $.each(data ,function(key, val) {
-            items.push('<devicename>' + val.devicename +'</devicename><manufacturer>' + val.manufacturer +'</manufacturer><dwversion>' + val.dwversion +'</dwversion><maintainer>' + val.maintainer +'</maintainer><download><a target="_blank" href="' + val.download +'">DOWNLOAD</a><a target="_blank" href=' + val.forumlink +'>XDA</a></download>');
-              $( '<device/>', {
-                "class": "my-new-list",
-                html: items.pop( "" )
-              }).appendTo( "#list-devices" );
-            });
-        });
-
-        var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene);
-        
-        var mySwiper = new Swiper ('.swiper-container', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-
-            // enable keyboard navigation
-            keyboard: {
-                enabled: true,
-            },
-
-            // Navigation arrows
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            }
-        })
-    </script>
+    
 </body>
 
 </html>
