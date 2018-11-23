@@ -1,11 +1,9 @@
-<h1>Aimrom.org | Personal Website</h1><br>
-<img src="images/Webscreenshot.png">
+<h1>DireWolf Organization</h1><br>
+<img src="images/webscreenshot.png">
 <br>
 <h2>Description:</h2>
-<p>Aimrom Website.</p>
+<p>DireWolf Website.</p>
 <p>Template Name: "Dimension" by HTML5 UP</p>
-
-http://aimrom.org/
 
 Credits:
 
