@@ -82,10 +82,6 @@
                 <div id="list-devices"></div>
                 <device class="my-new-list"><devicename>Riva/Rolex</devicename><manufacturer>Xiaomi</manufacturer><aimversion>6.1</aimversion><maintainer>Enzaik</maintainer><download><a target="_blank" href="https://www.opendesktop.org/p/1257047/">DOWNLOAD</a><a target="_blank" href="https://forum.xda-developers.com/xiaomi-redmi-5a/development/kernel-direwolf-unified-kernel-redmi-5a-t3824182">XDA</a></download></device>
             </article>
-                <device class="my-new-list"><devicename>Riva/Rolex</devicename><manufacturer>Xiaomi</manufacturer><aimversion>5</aimversion><maintainer>LordShenron</maintainer><download><a target="_blank" href="https://www.opendesktop.org/p/1260268/">DOWNLOAD</a><a target="_blank" href="https://forum.xda-developers.com/xiaomi-redmi-5a/development/kernel-direwolf-unified-kernel-redmi-5a-t3824182">XDA</a></download></device>
-            </article>
-                <device class="my-new-list"><devicename>Riva/Rolex</devicename><manufacturer>Xiaomi</manufacturer><aimversion>3</aimversion><maintainer>LordShenron</maintainer><download><a target="_blank" href="https://androidfilehost.com/?fid=5862345805528067512">DOWNLOAD</a><a target="_blank" href="https://forum.xda-developers.com/xiaomi-redmi-5a/development/kernel-direwolf-unified-kernel-redmi-5a-t3824182">XDA</a></download></device>
-            </article>
             <!-- Changelog -->
             <article id="changelog">
                 <h2 class="major">Features</h2>
@@ -126,7 +122,7 @@
         $.getJSON( "json/devices.json", function( data ) {
           var items = [];
            $.each(data ,function(key, val) {
-            items.push('<devicename>' + val.devicename +'</devicename><manufacturer>' + val.manufacturer +'</manufacturer><dwversion>' + val.dwversion +'</dwversion><maintainer>' + val.maintainer +'</maintainer><download><a target="_blank" href="' + val.download +'">DOWNLOAD</a><a target="_blank" href=' + val.forumlink +'>XDA</a></download>');
+            items.push('<devicename>' + val.devicename +'</devicename><manufacturer>' + val.manufacturer +'</manufacturer><aimversion>' + val.aimversion +'</aimversion><maintainer>' + val.maintainer +'</maintainer><download><a target="_blank" href="' + val.download +'">DOWNLOAD</a><a target="_blank" href=' + val.forumlink +'>XDA</a></download>');
               $( '<device/>', {
                 "class": "my-new-list",
                 html: items.pop( "" )
