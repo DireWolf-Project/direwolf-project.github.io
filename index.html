@@ -47,65 +47,37 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#download">Download</a></li>
-                    <li><a href="#changelog">Features</a></li>
+                    <li><a href="#about">Peeps behind Team Wolf!</a></li>
                 </ul>
             </nav>
         </header>
+        
         <!-- Main -->
         <div id="main">
             <!-- about -->
             <article id="about">
                 <h2 class="major">ABOUT DIREWOLF</h2>
-                <span class="image main"><img src="images/aboutdw.png" alt="" style="max-height: 80vh;" /></span>
-                <!--<p style="font-size: 30px;font-weight: bold;">About AIMROM</p> -->
                 <p>DireWolf Kernel was started by initially by LordShenron for Xioami Redmi 5A(Riva) and it focused mostly on making the sound capabilities of that device better. Later it evolved into a full Customized Kernel with a motive to increase the overall performance of the device. Team Wolf was formed when Enzaik and Kamil joined and started working to make Direwolf better. Now we are increasing our support for many device slowly.</p>
             </article>
-            <!-- Dick Picks -->
-            <article id="pics">
-                <!-- Slider main container -->
-                <div class="swiper-container">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                    </div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev swiper-button-white"></div>
-                    <div class="swiper-button-next swiper-button-white"></div>
-                </div>
-            </article>
-            <!-- Downloads -->
-            <article id="download">
-                <h2 class="major">DOWNLOADS</h2>
-                <div id="list-devices"></div>
-                <device class="my-new-list"><devicename>Riva/Rolex</devicename><manufacturer>Xiaomi</manufacturer><aimversion>6.1</aimversion><maintainer>Enzaik</maintainer><download><a target="_blank" href="https://www.opendesktop.org/p/1257047/">DOWNLOAD</a><a target="_blank" href="https://forum.xda-developers.com/xiaomi-redmi-5a/development/kernel-direwolf-unified-kernel-redmi-5a-t3824182">XDA</a></download></device>
-            </article>
-            <!-- Changelog -->
-            <article id="changelog">
-                <h2 class="major">Features</h2>
-                <date>Next rilis</date>
-                <version>7</version>
-                <span class="log">
-                    <ul>
-                        <li> DireWolf Features </li>
-                    </ul>
-                </span>
-            </article>
-        </div>
-        <!-- Main -->
-        <!-- Footer -->
+            </div>
+            
+            <!-- Download Button -->
+            <br>
+            <button onclick=" window.open('downloads.html','_blank')" class="btn color" type="button"><span><b>Download DireWolf | All Builds</b></span></button>
+            </br>
+            
+            <!--footer-->
         <footer id="footer">
             <ul class="icons">
-                <li><a href="https://t.me/dckernel" class="icon fa-group" target="_blank"><span class="label">Telegram</span></a></li>
+                <li><a href="https://telegram.me/dckernel" class="icon fa-group" target="_blank"><span class="label">Telegram</span></a></li>
                 <li><a href="https://github.com/direwolfkernel" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
                 <li><a href="mailto:priyanshu1911999@gmail.com?Subject=Hi%20there!" class="icon fa-envelope" target="_blank"><span class="label">Email</span></a></li>
             </ul>
-            <p class="copyright">&copy; 2017 - 2018 <a href="https://github.com/aimrom">TEAM WOLF</a></p>
+            <p class="copyright">&copy; 2018 - 2019 <a href="https://github.com/aimrom">TEAM WOLF</a></p>
             <p class="copyright">Template by html5up <a href="https://html5up.net/license">Creative Commons License</a></p>
         </footer>
     </div>
+    
     <!-- BG -->
     <div id="scene">
 		<div data-depth="0.5" id="bg"></div>
@@ -122,7 +94,6 @@
         $.getJSON( "json/devices.json", function( data ) {
           var items = [];
            $.each(data ,function(key, val) {
-            items.push('<devicename>' + val.devicename +'</devicename><manufacturer>' + val.manufacturer +'</manufacturer><aimversion>' + val.aimversion +'</aimversion><maintainer>' + val.maintainer +'</maintainer><download><a target="_blank" href="' + val.download +'">DOWNLOAD</a><a target="_blank" href=' + val.forumlink +'>XDA</a></download>');
               $( '<device/>', {
                 "class": "my-new-list",
                 html: items.pop( "" )
@@ -146,7 +117,8 @@
               prevEl: '.swiper-button-prev',
             }
         })
-    </script>
+    </script> 
+    
 </body>
 
 </html>
