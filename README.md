@@ -1,6 +1,6 @@
-## DireWolf Porject
+## DireWolf Project
 
-### LINK: https://direwolf-project.github.io/
+### LINK: https://direwolf-project.github.io/ and https://direwolf.tech
 
 :sunglasses::sunglasses::sunglasses: <br>
 :sunglasses::flushed::sunglasses: <br>
