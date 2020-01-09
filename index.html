@@ -1,316 +1,291 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-
-<head>
-    <title>Direwolf Project</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- bootstrap 4.0.0-beta.2 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
-    <!-- main style -->
-    <link rel="stylesheet" type="text/css" href="css/main.css?v=2018.09.20">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-</head>
-
-<body>
-    <header>
-        <div class='slider-navigation'>
-            <div class='nav-pointer draggable'>
-                0/0
-            </div>
-        </div>
-    </header>
-    <div class='site-container'>
-        <!-- select style button -->
-        <div class="btn-group" id="changestyle">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <span id="selstyle">Style Space</span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" data-val="default">Style Block</a></li>
-                <li><a class="dropdown-item" href="#" data-val="space">Style Space</a></li>
-                <li><a class="dropdown-item" href="#" data-val="snow">Style Snow</a></li>
-            </ul>
-        </div>
-        <section class='intro'>
-            <div id='particles-js'></div>
-            <div class='wrap'>
-                <div class='content'>
-                    <div class="profile-card">
-                        <header>
-                            <!-- avatar -->
-                            <a><img src="img/dw.jpeg" class="unselectable"></a>
-                            <!-- name -->
-                            <h1 class="unselectable">Direwolf Project</h1>
-                            <!-- role -->
-                            <h2 class="unselectable">An Opensource Android Project</h2>
-                        </header>
-                        <div class="profile-bio">
-                            <p class="unselectable">
-                                ASUS Max Pro M1
-                                <br>Download Link on Page 2
-                            </p>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Direwolf Project | #movingForward</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Direwolf Project website" />
+      <meta name="keywords" content="An opensource android project." />
+      <meta name="author" content="Direwolf Kernel" />
+      <!--Social Media icons--> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+      <link rel="icon" type="image/png" href="logo.jpeg">
+      <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap" rel="stylesheet">
+      <!-- Animate.css -->
+      <link rel="stylesheet" href="css/animate.css">
+      <!-- Bootstrap  -->
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <!-- Flexslider  -->
+      <link rel="stylesheet" href="css/flexslider.css">
+      <!-- Flaticons  -->
+      <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+      <!-- Theme style  -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Modernizr JS -->
+      <script src="js/modernizr-2.6.2.min.js"></script>
+   </head>
+   <body>
+      <div id="colorlib-page">
+         <div class="container-wrap">
+            <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a> 
+            <!----Side bar--->
+            <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+               <div class="text-center">
+                  <div class="author-img" style="background-image: url(images/dw.jpeg);"></div>
+                  <h1 id="colorlib-logo"><a href="https://direwolf-project.github.io">Direwolf Project</a></h1>
+                  <p><strong>An Open Source Android Project.</strong></p>
+               </div>
+               <nav id="colorlib-main-menu" role="navigation" class="navbar">
+                  <div id="navbar" class="collapse">
+                     <ul>
+                        <li><a href="#" data-nav-section="about">About</a></li>
+                        <li><a href="#" data-nav-section="change">Changelog</a></li>
+                        <li><a href="#" data-nav-section="contact">Contact</a></li>
+                     </ul>
+                  </div>
+               </nav>
+            </aside>
+            <!--- Github ribbon ----------->
+            <a href="https://github.com/Direwolf-Project" class="github-corner" aria-label="View source on GitHub">
+               <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+                  <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                  <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+                  <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+               </svg>
+            </a>
+            <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+            <!----- main page--------->
+            <div id="colorlib-main">
+               <!-------------------Intro--------------->
+               <section class="colorlib-about" data-section="about">
+                  <div class="colorlib-narrow-content">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                              <div class="col-md-12" style="margin-bottom: -30px">
+                                 <p style="margin-top: 20px;">Welcome to Direwolf Project</p>
+                              </div>
+                           </div>
                         </div>
-                        <!-- social links -->
-                       <center> <ul class="profile-social-links">
-                            <button class="w3-button w3-black w3-round" onclick="window.location.href = 'https://github.com/DireWolf-Project';">Our Github<i class='fab fa-github fa-fw fa-lg'></i></button>
-                        </ul> </center>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </section>
+               <!---------------About me---------------------->
+               <section class="colorlib-about" data-section="about">
+                  <div class="colorlib-narrow-content">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                              <div class="col-md-12">
+                                 <div class="about-desc">
+                                    <h2>About Us</h2>
+                                    <hr>
+                                    <p>Direwolf Project is an Opensource Android Project. We work on Android Custom ROMs and Kernels. <br> Currently we are working on ASUS Max Pro M1.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Lineage OS-->
+                           <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+                                 <a href="https://www.pling.com/p/1333162/" target="_blank">
+                                    <div class="services color-1">
+                                       <span class="icon2"><i class="fa fa-android"></i></span>
+                                       <h3>Lineage OS Unofficial</h3>
+                                       <span class="badge badge-light">8-JAN-2020</span>
+                                       <span class="badge badge-light">Download!</span>
+                                    </div>
+                                 </a>
+                              </div>
+                              
+                            <!--Superior OS-->
+                           <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+                                 <a href="https://www.pling.com/p/1293922/" target="_blank">
+                                    <div class="services color-2">
+                                       <span class="icon2"><i class="fa fa-android"></i></span>
+                                       <h3>Superior OS Official</h3>
+                                       <span class="badge badge-light">8-JAN-2020</span>
+                                       <span class="badge badge-light">Download!</span>
+                                    </div>
+                                 </a>
+                              </div>
+                              
+                              <!--Colt OS-->
+                           <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+                                 <a href="404." target="_blank">
+                                    <div class="services color-3">
+                                       <span class="icon2"><i class="fa fa-android"></i></span>
+                                       <h3>Colt OS Official</h3>
+                                       <span class="badge badge-light">Coming Soon!</span>
+                                    </div>
+                                 </a>
+                              </div>
+                              
+                              <!--Direwolf Kernel-->
+                           <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+                                 <a href="404." target="_blank">
+                                    <div class="services color-4">
+                                       <span class="icon2"><i class="fa fa-android"></i></span>
+                                       <h3>Direwolf Kernel</h3>
+                                       <span class="badge badge-light">Coming Soon!</span>
+                                    </div>
+                                 </a>
+                              </div>
+                              
+                             <!--Anouncement-->
+                           <div class="row">
+                              <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+                                 <div class="hire">
+                                    <h2>Lineage OS Unofficial and Superior OS Official are Available to Download Now.</h2>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               
+               <!------Changelog---------------->
+               <section class="colorlib-skills" data-section="change">
+                  <div class="colorlib-narrow-content">
+                     <div class="row">
+                        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                           <h2>Changelog</h2>
+                           <hr>
+                        </div>
+                     </div>
+                     <p>These are the changes made to the device tree, which is same for every build released.</p>
+                     <div class="row">
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                           <div class="progress-wrap">
+                              <h3 style="font-weight: 500;">Update Media Blobs from Dragon.</h3>
+                              <div class="progress">
+                                 <div class="progress-bar color-1" role="progressbar" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                    <span>100%</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                         <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+                           <div class="progress-wrap">
+                              <h3 style="font-weight: 500;">Upstreamed Kernel to v4.4.208.</h3>
+                              <div class="progress">
+                                 <div class="progress-bar color-6" role="progressbar" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                    <span>100%</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+                           <div class="progress-wrap">
+                              <h3 style="font-weight: 500;">Updated Peripheral Manager  from LA.UM.8.2.r1-04000-sdm660.0</h3>
+                              <div class="progress">
+                                 <div class="progress-bar color-2" role="progressbar" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                    <span>100%</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                           <div class="progress-wrap">
+                              <h3 style="font-weight: 500;">Updated UBW Blobs from Dragon.</h3>
+                              <div class="progress">
+                                 <div class="progress-bar color-3" role="progressbar" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                    <span>100%</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+                           <div class="progress-wrap">
+                              <h3 style="font-weight: 500;">Updated Sound FX Blobs from Dragon.</h3>
+                              <div class="progress">
+                                 <div class="progress-bar color-4" role="progressbar" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                    <span>100%</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                           <div class="progress-wrap">
+                              <h3 style="font-weight: 500;">Updated Perf blobs from Platina.</h3>
+                              <div class="progress">
+                                 <div class="progress-bar color-5" role="progressbar" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                    <span>100%</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>   
+                     </div>
+                  </div>
+               </section>
+   
+               <!--------Contact---------->
+               <section class="colorlib-contact" data-section="contact">
+                  <div class="colorlib-narrow-content">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                              <h2>Contact</h2>
+                              <hr>
+                              <p>On the off chance that you might want to connect with us, be it for investigating, some query or to simply say hello, don't hesitate to send us an email at. <strong><a href = "mailto: shen.priyanshu@gmail.com">shen.priyanshu@gmail.com</a></strong></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               
+               <!------------Footer------------->
+               <section class="colorlib-footer" data-section="footer">
+                  <div class="colorlib-narrow-content">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+                              <div class="hire">
+                                 <p style="text-align: center"><strong>If you like our work and efforts, please consider buying us a coffee.<br>Thank you for your support!</strong></p>
+                                 <div align=center>
+                                    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+                                    <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/lBUDKgM"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
+                                    <br><br>
+                                    <p style="font-size: 30px; margin-bottom: 0px;">
+									   <a href="https://twitter.com/LordShen0" style="color: black;" class="fa fa-twitter"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                                       <a href="https://github.com/DireWolf-Project" style="color: black;" class="fa fa-github"></a>
+                                    </p>
+                                 </div>
+                                 <p style="text-align: center; margin-bottom: -20px;"><strong>&copy; Direwolf Project</strong></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
             </div>
-        </section>
-        
-                <div class="parallax-window" data-parallax="scroll" data-image-src="img/wolf.jpg"></div>
-        
-        <!--Terminal -->
-        <section>
-            <div class="about-me">
-                <div class="text-center">
-			<img class="unselectable" src="img/dw-me.png" height="100" width="400" align="left">
-                </div>
-                <div class="clearfix"></div>
-                <div class="about-me__content" id="terminal-start">
-                    <p>Last login: Mon Jan  6 04:05:51 2020 from 47.30.184.121</p>
-                    <pre style="border: none;">
-         __|  __|_  )
-         _|  (     /   Amazon Linux AMI
-        ___|\___|___|
-
-                  <br>DOWNLOAD LINK FOR BUILDS COMING UP!
-                   </pre>
-                 
-                    <div class="command">
-                        <!-- email -->
-                        <p>echo $email</p>
-                        <span class="hideme">email: shen.priyanshu@gmail.com</span>
-                        <!-- devices -->
-                        <p>echo $available_devices</p>
-                        <span class="hideme">Asus Max Pro M1</span>
-                        <!-- ROMs -->
-                        <p>echo $currently_available_Builds</p>
-                        <span class="hideme">Superior Os Official<br>
-                                             COLT OS Official<br>
-                                             Lineage OS Unofficial</span>
-                        <!-- Kernels -->
-                        <p>echo $DOWNLOAD BUILDS!</p>
-                     <span class="hideme"><center><button class="w3-btn w3-block w3-teal" onclick="window.location.href = 'download.html';">DOWNLOAD<i class='fas fa-download fa-fw fa-lg'></i></button></center></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- =================== script =================== -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-        <script src="lib/parallax.js-1.4.2/parallax.min.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
-
-        <!-- particles js -->
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-        <!-- bootstrap 4.0.0-beta.2 -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-            crossorigin="anonymous"></script>
-
-        <!-- main js file -->
-        <script src="js/main.js"></script>
-
-        <script>
-            $(document).ready(function () {
-
-                // random style on page load
-                let display_text = ''
-                switch (Math.round(Math.random() * 2 + 1)) {
-                    case 1:
-                        styleDefault();
-                        display_text = 'Style Block'
-                        break;
-                    case 2:
-                        styleSpace();
-                        display_text = 'Style Space'
-                        break;
-                    case 3:
-                        styleSnow();
-                        display_text = 'Style Snow'
-                        break;
-                    default:
-                        styleSpace();
-                        display_text = 'Style Block'
-                }
-                $('#selstyle').text(display_text);
-
-                $('#changestyle .dropdown-menu a').click(function () {
-                    var style = $(this).data('val');
-                    switch (style) {
-                        case 'default':
-                            styleDefault();
-                            break;
-                        case 'space':
-                            styleSpace();
-                            break;
-                        case 'snow':
-                            styleSnow();
-                            break;
-                        default:
-                            styleSpace();
-                    }
-                    $('#selstyle').text($(this).text());
-                });
-
-                /*-------------------------------
-                    terminal linux style
-                -------------------------------*/
-                var about_me_content_displayed = false;
-                var $lines = $('.command p');
-                $lines.hide();
-
-                var lineContents = [];
-                var output = [];
-
-                var terminal = function () {
-                    var skip = 0;
-                    typeLine = function (idx) {
-                        idx == null && (idx = 0);
-                        var element = $lines.eq(idx);
-                        var content = lineContents[idx];
-                        if (typeof content == "undefined") {
-                            $('.skip').hide();
-                            return;
-                        }
-                        var charIdx = 0;
-                        var typeChar = function () {
-                            var rand = Math.round(Math.random() * 150) + 20;
-
-                            setTimeout(function () {
-                                var char = content[charIdx++];
-                                element.append(char);
-                                if (typeof char !== "undefined")
-                                    typeChar();
-                                else {
-                                    element.append('<br/><span class="output">' + output[idx] + '</span>');
-                                    element.removeClass('active');
-                                    typeLine(++idx);
-                                }
-                            }, skip ? 0 : rand);
-                        }
-                        element.append('[ec2-user@ip-127-0-0-1 ~]$ ').addClass('active');
-                        typeChar();
-                    }
-
-                    $lines.each(function (i) {
-                        lineContents[i] = $(this).text();
-                        output[i] = $(this).next('span').html();
-                        $(this).text('').show();
-                    });
-                    typeLine();
-                }
-
-                $(window).scroll(function () {
-                    var hT = $('#terminal-start').offset().top,
-                        hH = $('#terminal-start').outerHeight(),
-                        wH = $(window).height(),
-                        wS = $(this).scrollTop() - 250;
-                    if (wS > (hT + hH - wH) && !about_me_content_displayed) {
-                        about_me_content_displayed = true;
-                        terminal();
-                    }
-                });// end terminal style -------
-
-                $('section').each(function () {
-                    $('.slider-navigation').prepend('<div class="tick"></div>');
-                });
-
-                $('.tick').on('click', function () {
-                    var tickIndex = $(this).index();
-                    $('body').scrollTop($(window).height() * tickIndex);
-                });
-
-                updatePos();
-            }); // end document ready -------
-
-            var isDragging = false;
-            var sliderTop, pointerPos, currentSection;
-
-            var bodyHeight = $('body').height();
-            var sliderHeight = $('.slider-navigation').height();
-            var elementHeight = $('section').height();
-            var sectionAmount = $('section').length;
-            var scale = (bodyHeight - (elementHeight)) / (sliderHeight - $('.nav-pointer').outerHeight());
-
-            var waitForFinalEvent = (function () {
-                var timers = {};
-                return function (callback, ms, uniqueId) {
-                    if (!uniqueId) {
-                        uniqueId = "resize";
-                    }
-                    if (timers[uniqueId]) {
-                        clearTimeout(timers[uniqueId]);
-                    }
-                    timers[uniqueId] = setTimeout(callback, ms);
-                };
-            })();
-
-            function updatePos() {
-                currentSection = $(window).scrollTop() / elementHeight;
-                currentSectionNum = Math.ceil(currentSection + 0.01);
-                sliderTop = $(window).scrollTop() / scale;
-                $('.nav-pointer').css('top', sliderTop).text(currentSectionNum + '/' + sectionAmount);
-            }
-
-            function sliderMove(e) {
-                $('body').scrollTop(parseInt(e) * scale);
-            }
-
-            $(window).scroll(function () {
-                if (!isDragging) {
-                    updatePos();
-                }
-            });
-
-            $(window).resize(function () {
-                waitForFinalEvent(function () {
-                    bodyHeight = $('body').height();
-                    sliderHeight = $('.slider-navigation').height();
-                    elementHeight = $('section').height();
-                    sectionAmount = $('section').length;
-                    scale = (bodyHeight - (elementHeight)) / (sliderHeight - $('.nav-pointer').outerHeight());
-
-                    updatePos();
-                }, 500, "resizing");
-            });
-
-            // $(".draggable").draggable({
-            //  axis: "y",
-            //  containment: "parent",
-            //  start: function() {
-            //      isDragging = true;
-            //      $('body').addClass('dragging');
-            //  },
-            //  drag: function() {
-            //      pointerPos = $(this).css('top');
-            //      sliderMove(pointerPos);
-            //      updatePos();
-            //  },
-            //  stop: function() {
-            //      isDragging = false;
-            //      $('body').removeClass('dragging');
-            //  }
-            // });
-
-            // Steve Jobs Quotes
-            console.log("\n \t Your work is going to fill a large part of your life,\n and the only way to be " +
-                "truly satisfied is to do what you \n believe is great work. And the only way to do great" +
-                " work \n is to love what you do. If you haven't found it yet, keep \n looking. Don't settle." +
-                " As with all matters of the heart, \n you'll know when you find it.\n\n\n \t\t\t\t\t\t\t\t\t\t\t " +
-                "Steve Jobs \n\n");
-
-        </script>
-</body>
-
+            <!-- end:colorlib-main -->
+         </div>
+         <!-- end:container-wrap -->
+      </div>
+      <!-- end:colorlib-page -->
+      <!-- jQuery -->
+      <script src="js/jquery.min.js"></script>
+      <!-- jQuery Easing -->
+      <script src="js/jquery.easing.1.3.js"></script>
+      <!-- Bootstrap -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Waypoints -->
+      <script src="js/jquery.waypoints.min.js"></script>
+      <!-- Flexslider -->
+      <script src="js/jquery.flexslider-min.js"></script>
+      <!-- Counters -->
+      <script src="js/jquery.countTo.js"></script>
+      <!-- MAIN JS -->
+      <script src="js/main.js"></script>
+   </body>
 </html>
