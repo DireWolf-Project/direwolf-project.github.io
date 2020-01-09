@@ -21,12 +21,20 @@
       <link rel="stylesheet" href="css/bootstrap.css">
       <!-- Flexslider  -->
       <link rel="stylesheet" href="css/flexslider.css">
-      <!-- Flaticons  -->
-      <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
       <!-- Theme style  -->
       <link rel="stylesheet" href="css/style.css">
       <!-- Modernizr JS -->
       <script src="js/modernizr-2.6.2.min.js"></script>
+      
+      <style type="text/css">
+      .darkmode--activated p, .darkmode--activated h1, .darkmode--activated h2, .darkmode--activated h3, .darkmode--activated h4, .darkmode--activated h5, .darkmode--activated h6, .darkmode--activated span, .darkmode--activated ul, .darkmode--activated li, .darkmode--activated i, .darkmode--activated label, .darkmode--activated span{
+        color: #fff;
+    }
+    .darkmode--activated .card{
+        background: #000000;
+    }
+    </style>
+      
    </head>
    <body>
       <div id="colorlib-page">
@@ -37,7 +45,7 @@
                <div class="text-center">
                   <div class="author-img" style="background-image: url(images/dw.jpeg);"></div>
                   <h1 id="colorlib-logo"><a href="https://direwolf-project.github.io">Direwolf Project</a></h1>
-                  <p><strong>An Open Source Android Project.</strong></p>
+                  <p><font color="black"><strong>An Open Source Android Project.</strong></font></p>
                </div>
                <nav id="colorlib-main-menu" role="navigation" class="navbar">
                   <div id="navbar" class="collapse">
@@ -45,10 +53,14 @@
                         <li><a href="#" data-nav-section="about">About</a></li>
                         <li><a href="#" data-nav-section="change">Changelog</a></li>
                         <li><a href="#" data-nav-section="contact">Contact</a></li>
+                        <button onclick="Dark()" id="dark"><font color ="black">Dark Mode</font></button>
+                        <button onclick="Light()" id="dark"><font color ="black">Light Mode</font></button>
                      </ul>
                   </div>
                </nav>
             </aside>
+            
+            
             <!--- Github ribbon ----------->
             <a href="https://github.com/Direwolf-Project" class="github-corner" aria-label="View source on GitHub">
                <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
@@ -58,6 +70,7 @@
                </svg>
             </a>
             <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+                  
             <!----- main page--------->
             <div id="colorlib-main">
                <!-------------------Intro--------------->
@@ -272,7 +285,21 @@
          </div>
          <!-- end:container-wrap -->
       </div>
-      <!-- end:colorlib-page -->
+<!-- end:colorlib-page -->
+      </script>
+      
+<!--Dark Mode-->            
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.4/lib/darkmode-js.min.js"></script>
+<script>
+function Dark(){
+new Darkmode().showWidget();
+} 
+function Light()
+{
+	window.location.reload();
+}
+</script>
+
       <!-- jQuery -->
       <script src="js/jquery.min.js"></script>
       <!-- jQuery Easing -->
